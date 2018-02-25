@@ -1,0 +1,26 @@
+#开发环境配置
+debug: true
+server:
+  port: 8066 #tomcat运行端口
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.49.210:3306/lmcard?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  # solr: 
+    # host: http://127.0.0.1:8983/solr
+    
+    elasticsearch:
+      #cluster-name: #默认为elasticsearch
+      #cluster-nodes: 127.0.0.1: #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
+      properties: 
+          path:
+            logs: ./elasticsearch/log #elasticsearch日志存储目录
+            data: ./elasticsearch/data #elasticsearch数据存储目录
+    
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+ 

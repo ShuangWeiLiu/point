@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >  
+<mapper namespace="com.example.demo.mapper.CardBannerMapper" >  
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.CardBanner" >  
+        <id column="tid" property="tid" jdbcType="BIGINT" />  
+        <result column="title" property="title" jdbcType="VARCHAR" />  
+        <result column="image" property="image" jdbcType="VARCHAR" />  
+        <result column="module" property="module" jdbcType="TINYINT"/>
+        <result column="type" property="type" jdbcType="TINYINT"/>
+        <result column="bid" property="bid" jdbcType="INTEGER"/>
+        <result column="bname" property="bname" jdbcType="VARCHAR" />  
+        <result column="page_url" property="pageUrl" jdbcType="VARCHAR" />
+        <result column="enable" property="enable" jdbcType="TINYINT" />
+        <result column="state" property="state" jdbcType="TINYINT" /> 
+        <result column="seqno" property="seqno" jdbcType="INTEGER" />
+        <result column="descp" property="descp" jdbcType="VARCHAR" />    
+        <result column="start_time" property="startTime" jdbcType="TIMESTAMP"/>
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP"/>
+        <result column="update_by" property="updateBy" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+        <result column="create_by" property="createBy" jdbcType="TIMESTAMP"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+</mapper>
