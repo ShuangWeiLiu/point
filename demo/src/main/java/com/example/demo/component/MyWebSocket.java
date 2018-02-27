@@ -25,7 +25,8 @@ public class MyWebSocket {
 	private Session session;
 
 	/**
-	* 连接建立成功调用的方法*/
+	* 连接建立成功调用的方法
+	*/
 	@OnOpen
 	public void onOpen(Session session) {
 		this.session = session;
@@ -83,7 +84,8 @@ public class MyWebSocket {
 
 	/**
 	* 群发自定义消息
-	* */
+	* 
+	*/
 	public static void sendInfo(String message) throws IOException {
 		for (MyWebSocket item : webSocketSet) {
 			try {
