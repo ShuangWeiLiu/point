@@ -11,6 +11,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+	    // 打印spring boot 版本
+	    String implementationVersion = SpringApplication.class.getPackage().getImplementationVersion();  
+        System.out.println("[spring boot 版本]" + implementationVersion);  
+
+        SpringApplication.run(DemoApplication.class, args);
 	}
 }
